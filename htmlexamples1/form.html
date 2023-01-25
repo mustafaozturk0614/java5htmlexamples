@@ -10,31 +10,46 @@
 
 <body>
 
-    <label for="name">Name</label>
-    <br>
-    <input type="text" placeholder="your name" id="name"> <br>
-    <label>Sur Name</label>
-    <br>
-    <input type="text" placeholder="your surname"> <br>
-    <label>Email</label>
-    <br>
-    <input type="email"> <br>
-    <label>Password</label>
-    <br>
-    <input type="password"> <br>
-    <label>Age</label>
-    <br>
-    <input type="number"> <br>
-    <label>Date</label>
-    <br>
-    <input type="date"> <br> <br>
-    <label>Gender</label> <br>
-    <label for="">Male</label>
-    <input type="radio" id="gender" name="gender" value="Male">
-    <label for="">Female</label>
-    <input type="radio" id="gender" name="gender" value="Female">
-    <label for="">Other</label>
-    <input type="radio" id="gender" name="gender" value="Other">
+    <form action="">
+        <label for="name">Name</label><br>
+        <input type="text" placeholder="your name" id="name" name="name"> <br>
+        <label for="surname">Sur Name</label><br>
+        <input type="text" placeholder="your surname" id="surname" name="surname"> <br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email"> <br>
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password"> <br>
+        <label for="age">Age</label><br>
+        <input type="number" required id="age" name="age"> <br>
+        <label for="date">Date</label><br>
+        <input type="date" id="date" name="date"> <br> <br>
+        <label for="gender">Gender</label> <br>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="other">Other</label>
+        <input type="radio" id="other" name="gender" value="Other"><br><br>
+        <label for="hobies">Hobies</label><br>
+        <input type="checkbox" id="art" name="art" value="art"> <label for="art">Art</label>
+        <input type="checkbox" id="music" name="music" value="music"> <label for="art">Music</label>
+        <input type="checkbox" id="technology" name="technology" value="technology"> <label for="art">Technology</label>
+        <br><br>
+        <label for="city">City</label><br>
+        <select name="cities" id="city">
+            <option value="ANKARA">Ankara</option>
+            <option value="ISTANBUL">İstanbul</option>
+            <option value="ANTALYA" selected>Antalya</option>
+            <option value="IZMIR">İzmir</option>
+        </select><br><br>
+        <textarea style="resize: none;" name="messagebox" id="messagebox" placeholder="your message" cols="80"
+            rows="10"></textarea>
+        <br><br>
+        <input type="submit" value="Gönder">
+        <input type="reset" value="Temizle">
+
+    </form>
+
 
 
 
