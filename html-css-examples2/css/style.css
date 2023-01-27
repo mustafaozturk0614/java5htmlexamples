@@ -10,6 +10,7 @@
     height: 120px;
     position: sticky;
     top: 0;
+    z-index: 3;
 }
 
 #socialmedia {
@@ -50,7 +51,7 @@ h1 {
 }
 
 .main {
-    height: 2800px;
+    height: 3500px;
     background-color: bisque;
     width: 70%;
     margin-left: 250px;
@@ -93,5 +94,74 @@ h1 {
     width: 85%;
     margin: auto;
     margin-bottom: 10px;
+
+}
+
+.videolar {
+    background-color: orchid;
+    width: 80%;
+    margin: auto;
+    margin-top: 2%;
+    padding: 25px;
+    z-index: -1;
+
+}
+
+.videolar iframe,
+video {
+
+    margin: 10px;
+    margin-left: 20px;
+
+}
+
+.videolar h2 {
+
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.video-alt {
+    width: 90%;
+    margin: auto;
+}
+
+.hakkımızda {
+    background-color: yellowgreen;
+    width: 80%;
+    margin: auto;
+    margin-top: 2%;
+    padding: 25px;
+    z-index: -1;
+
+}
+
+.hakkımızda h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.my-footer {
+    background-color: gray;
+    position: relative;
+    height: 250px;
+}
+
+.iletisim {
+    position: absolute;
+    right: 190px;
+    margin-top: 80px;
+}
+
+.footer-nav {
+    margin-left: 80px;
+    position: absolute;
+}
+
+.footer-nav ul {
+    position: absolute;
+    left: 20px;
+    top: 80px;
 
 }

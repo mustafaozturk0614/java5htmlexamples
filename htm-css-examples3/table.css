@@ -1,0 +1,55 @@
+th,
+td {
+    border: 1px solid black;
+    padding: 10px;
+    color: brown;
+    text-align: center;
+
+
+
+}
+
+td {
+    width: 100px;
+}
+
+td:hover {
+    background-color: antiquewhite;
+
+}
+
+th {
+    color: black;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+th:hover {
+    color: blue;
+
+}
+
+button {
+    background-color: deepskyblue;
+    border-radius: 25px;
+    padding: 15px 30px;
+    color: azure;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: cadetblue;
+    font-style: italic;
+
+}
+
+button:active {
+    color: brown !important;
+    background-color: bisque;
+    transform: translateY(4px);
+}
+
+button:focus {
+    background-color: bisque;
+    color: black;
+}
