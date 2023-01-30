@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    background-color: orange;
+    height: 120px;
+    align-items: center;
+}
+
+
+
+#socialmedia {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 2px;
+    width: 40%;
+    height: 40%;
+    background-color: aquamarine;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+#socialmedia li {
+    height: 60%;
+    width: 25%;
+    list-style: none;
+    border: 0.5px solid black;
+    border-radius: 15px;
+    padding: 1%;
+    background-color: bisque;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.sidebar {
+    background-color: aqua;
+    flex: 1;
+
+}
+
+.sidebar ul li {
+    margin: 30px;
+
+}
+
+.main {
+    flex: 5;
+    background-color: antiquewhite;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.resimler {
+    width: 80%;
+    background-color: brown;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+
+
+.resimler img {
+    width: 25%;
+}
+
+@media screen and (max-width:800px) {
+
+    #socialmedia {
+        background-color: blueviolet;
+    }
+
+
+}

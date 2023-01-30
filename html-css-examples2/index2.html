@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style2.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <img class="header-img" src="/img/change-my-app-icons_156366.png" alt="uygulama logosu" height="50px"
+            width="80px">
+        <h1>My App</h1>
+
+        <ul id="socialmedia">
+            <li><a target="_blank" href="https://www.youtube.com/">youtube</a></li>
+            <li><a href="https://www.google.com/">google</a></li>
+            <li><a href="https://www.instagram.com/">instagram</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="#resimler">Resimler </a></li>
+                <li><a href="#videolar">Videolar</a></li>
+                <li><a href="#hakkımızda">Hakkımızda</a></li>
+                <li><a href="#iletisim">İletisim</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <h2>Resimler</h2>
+            <div class="resimler" id="resimler">
+                <img src="https://picsum.photos/200/300" alt="resim1">
+                <img src="https://picsum.photos/200/300" alt="resim2">
+                <img src="https://picsum.photos/200/300" alt="resim3">
+                <img src="https://picsum.photos/200/300" alt="resim4">
+                <img src="https://picsum.photos/200/300" alt="resim5">
+                <img src="https://picsum.photos/200/300" alt="resim6">
+                <img src="https://picsum.photos/200/300" alt="resim4">
+                <img src="https://picsum.photos/200/300" alt="resim5">
+                <img src="https://picsum.photos/200/300" alt="resim6">
+
+            </div>
+            <div class="videolar" id="videolar">
+
+                <h2>Videolar</h2>
+
+                <div class="video-alt">
+                    <iframe width="300" height="250" src="https://www.youtube.com/embed/KcIzuk20_a4"
+                        title="Varoluşçuluk: Hayatın Anlamı Nedir? Kierkegaard'dan Sartre'a | Felsefe Tarihi 44"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+
+                    <iframe width="300" height="250" src="https://www.youtube.com/embed/UhuNUwhvP4U"
+                        title="ÖZGÜR İRADE YOK - Spinoza Felsefesi ve Determinizm | Felsefe Tarihi 26" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                </div>
+
+                <div class="video-alt">
+
+                    <iframe width="300" height="250" src="https://www.youtube.com/embed/4DHBfapjK8Q"
+                        title="Kötülüğün Sıradanlığı - Yazar Burada Ne Demek İstemiş? - Aytuğ Akdoğan - B31"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <iframe width="300" height="250" src="https://www.youtube.com/embed/XEr1hWCS3hk"
+                        title="Deniz Tekin - Flu Sahne - B02" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+
+                </div>
+
+                <div class="video-alt">
+
+                    <video src="/img/David Bowie – Space Oddity (Official Video).mp4" width="300" height="250"
+                        allowfullscreen controls muted autoplay> </video>
+                    <audio src="/img/paptircem-evolution-of-mor-ve-otesi.mp3" controls muted autoplay></audio>
+
+                </div>
+
+
+
+
+            </div>
+            <div class="hakkımızda" id="hakkımızda">
+                <h2> <ins>Biz Kimiz</ins> </h2>
+                <p> <strong>Lorem</strong> , ipsum dolor sit amet consectetur adipisicing elit. Saepe, officiis
+                    <b>sequi</b>
+                    voluptatem adipisci
+                    cupiditate aspernatur. Aut eius, optio quod voluptatem distinctio sunt voluptate recusandae
+                    <u>quisquam</u>
+                    similique? Officia ratione est iure assumenda, repellat error dolore vitae <del> placeat saepe</del>
+                    atque repudiandae nobis delectus, tempore odio mollitia? Eos omnis dolor <small> molestiae
+                        unde!</small> </p>
+
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="my-footer">
+        <div class="footer-nav">
+            <ul>
+                <h4>Site Haritası</h4>
+                <li><a href="#resimler">Resimler </a></li>
+                <li><a href="#videolar">Videolar</a></li>
+                <li><a href="#hakkımızda">Hakkımızda</a></li>
+                <li><a href="#iletisim">İletisim</a></li>
+            </ul>
+
+        </div>
+        <div class="iletisim">
+            <h4>İletişim Bilgileri</h4>
+            <ul>
+                <li>Tel:555-555-55-55</li>
+                <li><a href="mailto:mustafa@gmail.com">email:mustafa@gmail.com</a></li>
+                <li>Adres:Keçiören/Ankara</li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        var shiftWindow = function () {
+            scrollBy(0, -150)
+        };
+        window.addEventListener("hashchange", shiftWindow);
+
+        function load() {
+            if (window.location.hash) shiftWindow();
+        }
+    </script>
+</body>
+
+</html>

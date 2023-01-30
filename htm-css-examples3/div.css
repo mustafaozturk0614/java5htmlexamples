@@ -1,0 +1,123 @@
+.div1 {
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    margin-bottom: 50px;
+    padding: 50px;
+
+
+}
+
+.div2 {
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    padding: 60px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.container {
+    margin-bottom: 20px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+
+
+
+}
+
+.box {
+    border: 1px solid black;
+    width: 400px;
+    height: 20px;
+}
+
+.box-4 {
+    background-color: blue;
+}
+
+.box-5 {
+    background-color: orange;
+}
+
+.box-6 {
+    background-color: green;
+}
+
+.box-7 {
+    background-color: grey;
+}
+
+.box-4 div {
+    background-color: blueviolet;
+    width: 50%;
+}
+
+.container2 {
+    background-color: blue;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: auto;
+
+
+
+}
+
+.box-9 {
+    background-color: antiquewhite;
+}
+
+.box-10 {
+    background-color: brown;
+}
+
+.box-11 {
+    background-color: bisque;
+}
+
+.box-12 {
+    background-color: orange;
+}
+
+.box-13 {
+    background-color: lime;
+}
+
+.box-14 {
+    background-color: tomato;
+}
+
+.box-15 {
+    background-color: thistle;
+}
+
+.box-16 {
+    background-color: darkgray;
+}
+
+.container3 {
+    background-color: bisque;
+    height: 300px;
+    display: flex;
+    margin-top: 50px;
+}
+
+.box-17 {
+    background-color: orange;
+    flex: 1;
+}
+
+.box-18 {
+    background-color: lightblue;
+    flex: 4;
+}
+
+.box-19 {
+    background-color: lime;
+    flex: 6;
+}

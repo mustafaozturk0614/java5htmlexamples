@@ -4,9 +4,6 @@ td {
     padding: 10px;
     color: brown;
     text-align: center;
-
-
-
 }
 
 td {
@@ -26,7 +23,8 @@ th {
 
 th:hover {
     color: blue;
-
+    transform: scale(1.2);
+    transition: 1s;
 }
 
 button {
@@ -40,7 +38,6 @@ button {
 button:hover {
     background-color: cadetblue;
     font-style: italic;
-
 }
 
 button:active {
