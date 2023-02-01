@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+vize %40 final %60
+ortalama 80 den buyuk ise basarılı --->
+60 dan buyuk ise gectiniz
+50 den buyuk ise ortalam ile gectiniz
+diğerleri için kaldınız
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="display:flex; flex-direction: column; align-items:center;  justify-content:center;">
+        <div>
+            <button onclick=arttır()>Arttır</button>
+            <button onclick=azalt()>Azalt</button>
+        </div>
+        <p style=" margin-top: 10px;">0</p>
+    </div>
+
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <div style="display: flex; flex-direction: column; width: 400px; height: 150px;">
+            <label style="margin-bottom: 5px; margin-left: 5px;" for="vizeNotu"> Vize Notu</label>
+            <input id="vize" style="margin-bottom: 5px; height: 20px;" type="number" placeholder="vize notunu giriniz"
+                class="vizeNotu">
+            <label style="margin-bottom: 5px; margin-left: 5px; " for="finalNotu"> FinalNotu</label>
+            <input style="margin-bottom: 5px; height: 20px;" type="number" placeholder="final notunu giriniz"
+                class="finalNotu">
+            <button class="orthesapla"
+                style="margin-bottom: 35px; background-color: dodgerblue; color: aliceblue; width:70%;margin: auto; height: 30px;">Hesapla</button>
+        </div>
+        <label class="result">Sonuc:</label>
+
+    </div>
+
+
+
+    <script>
+        let value = document.querySelector("p")
+
+        function arttır() {
+            value.textContent++
+        }
+
+        function azalt() {
+            value.textContent--
+        }
+
+        let ort;
+        let result = document.querySelector(".result")
+        document.querySelector(".orthesapla").addEventListener("click", function () {
+            let vize = (document.querySelector(".vizeNotu").value) * 0.4
+            let final = (document.querySelector(".finalNotu").value) * 0.6
+            ort = vize + final
+            let value;
+            if (ort > 80) {
+                value = "Başarılı"
+            } else if (ort > 60) {
+                value = "Geçtiniz"
+            } else if (ort > 50) {
+                value = "Ortalama ile Geçtiniz"
+            } else {
+                value = "Kaldınız"
+            }
+            result.textContent = `Sonuc=====> ${changeColor(value)}`
+
+        })
+
+
+        function changeColor(value) {
+            switch (value) {
+                case "Başarılı":
+                    result.style.color = "green"
+                    result.style.fontSize = "20px"
+                    break;
+                case "Geçtiniz":
+                    result.style.color = "blue"
+                    result.style.fontSize = "20px"
+                    break;
+                case "Ortalama ile Geçtiniz":
+                    result.style.color = "orange"
+                    result.style.fontSize = "20px"
+                    result.style.fontWeight = 600
+                    break;
+
+                default:
+                    result.style.color = "red"
+                    result.style.fontSize = "20px"
+                    result.style.backgroundColor = "yellow"
+                    result.style.fontWeight = 800
+                    break;
+            }
+            return value;
+        }
+    </script>
+</body>
+
+</html>

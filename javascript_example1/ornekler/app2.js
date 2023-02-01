@@ -93,3 +93,57 @@ index1denİtibarenilgiAlaniEkle2(array);
 
 let array3 = [...array, ...array2];
 console.log(array3);
+
+function login() {
+  let username = document.getElementById("username");
+  let password = document.getElementById("pswd").value;
+  if (username.value === user.username && password === user.password) {
+    alert("Giriş Başarılı");
+  } else {
+    alert("Kullanıcı adı veya Şifre Hatalı");
+  }
+}
+
+let form = document.querySelector(".loginform");
+
+let login2 = () => {
+  console.log(form.username.value);
+  console.log(form.password.value);
+  if (
+    form.username.value === user.username &&
+    form.password.value === user.password
+  ) {
+    alert("Giriş Başarılı");
+  } else {
+    alert("Kullanıcı adı veya Şifre Hatalı");
+  }
+};
+let form2 = document.forms["loginform2"];
+let login3 = (e) => {
+  e.preventDefault();
+
+  console.log(form2.username.value);
+  console.log(form2.password.value);
+  if (
+    form2.username.value === user.username &&
+    form2.password.value === user.password
+  ) {
+    alert("Giriş Başarılı");
+  } else {
+    alert("Kullanıcı adı veya Şifre Hatalı");
+  }
+};
+
+function login4(e) {
+  e.preventDefault();
+
+  if (
+    e.target.username.value === user.username &&
+    e.target.password.value === user.password
+  ) {
+    alert("Giriş Başarılı");
+  } else {
+    alert("Kullanıcı adı veya Şifre Hatalı");
+  }
+}
+form2.addEventListener("submit", login4);
