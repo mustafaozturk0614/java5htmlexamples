@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="mt-2 mx-3 fixed-top">
+        <h6 class="time"> Süre : 0 saat - 0 dk- 19 sn</h6>
+
+    </div>
+
+    <div class="quiz container d-flex flex-column align-items-center ">
+        <div class="mb-2 mt-2">
+            <h1> QUİZ</h1>
+        </div>
+        <div class=" text-center  bg-light">
+            <p>Puanınız<span class="result text-primary display-4 px-3"> 50 </span></p>
+        </div>
+        <!-- <div class="row text-center  bg-light">
+            <p class="col-6 d-flex align-items-end">Puanınız</p>
+            <p class="col-6 display-4 text-bg-primary">50</p>
+        </div> -->
+        <form class="quiz-form d-flex flex-column w-70">
+            <div>
+                <p style="font-size: 20px;"> 1-Sql açılımı hangisidir ?</p>
+                <div class="row  p-2 mt-1">
+                    <label class="col-8 text-secondary-emphasis"> <strong class="mx-1 text-dark">A)</strong> Structured
+                        Question
+                        Language</label>
+                    <input class="col-3" type="radio" name="s1" value="A">
+                </div>
+                <div class="row p-2 mt-1">
+                    <label class=" col-8 text-secondary-emphasis"> <strong class="mx-1 text-dark">B)</strong> Structured
+                        Query
+                        Language</label>
+                    <input class="col-3" type="radio" name="s1" value="B">
+                </div>
+                <div class="row  p-2 mt-1">
+                    <label class="col-8 text-secondary-emphasis"> <strong class="mx-1 text-dark">C)</strong> Question
+                        Language</label>
+                    <input class="col-3" type="radio" name="s1" value="C">
+                </div>
+            </div>
+            <div>
+                <p style="font-size: 20px;"> 2-Veri tabanında güncelleme yapmak için kullanılan komut hangisidir?</p>
+                <div class="row  p-2 mt-1">
+                    <label class="col-8 text-secondary-emphasis"> <strong class="mx-1 text-dark">A)</strong> SAVE
+                        AS</label>
+                    <input class="col-3" type="radio" name="s2" value="A">
+                </div>
+                <div class="row p-2 mt-1">
+                    <label class=" col-8 text-secondary-emphasis"> <strong class="mx-1 text-dark">B)</strong>
+                        UPDATE</label>
+                    <input class="col-3" type="radio" name="s2" value="B">
+                </div>
+                <div class="row  p-2 mt-1">
+                    <label class="col-8 text-secondary-emphasis"> <strong class="mx-1 text-dark">C)</strong>
+                        MODİFY</label>
+                    <input class="col-3" type="radio" name="s2" value="C">
+                </div>
+            </div>
+            <div>
+                <p style="font-size: 20px;"> 3-Veri tabanında silme yapmak için kullanılan komut hangisidir?</p>
+                <div class="row  p-2 mt-1">
+                    <label class="col-8 text-secondary-emphasis"> <strong class="mx-1 text-dark">A)</strong>
+                        DELETE</label>
+                    <input class="col-3" type="radio" name="s3" value="A">
+                </div>
+                <div class="row p-2 mt-1">
+                    <label class=" col-8 text-secondary-emphasis"> <strong class="mx-1 text-dark">B)</strong>
+                        REMOVE</label>
+                    <input class="col-3" type="radio" name="s3" value="B">
+                </div>
+                <div class="row  p-2 mt-1">
+                    <label class="col-8 text-secondary-emphasis"> <strong class="mx-1 text-dark">C)</strong>
+                        COLLAPSE</label>
+                    <input class="col-3" type="radio" name="s3" value="C">
+                </div>
+            </div>
+            <div>
+                <p style="font-size: 20px;"> 4-Veri tabanında yeni kayıt eklamek için kullanılan komut hangisidir??</p>
+                <div class="row  p-2 mt-1">
+                    <label class="col-8 text-secondary-emphasis"> <strong class="mx-1 text-dark">A)</strong> INSERT
+                        INTO</label>
+                    <input class="col-3" type="radio" name="s4" value="A">
+                </div>
+                <div class="row p-2 mt-1">
+                    <label class=" col-8 text-secondary-emphasis"> <strong class="mx-1 text-dark">B)</strong> ADD
+                        RECORD</label>
+                    <input class="col-3" type="radio" name="s4" value="B">
+                </div>
+                <div class="row  p-2 mt-1">
+                    <label class="col-8 text-secondary-emphasis"> <strong class="mx-1 text-dark">C)</strong> INSERT
+                        NEW</label>
+                    <input class="col-3" type="radio" name="s4" value="C">
+                </div>
+            </div>
+            <div>
+                <p style="font-size: 20px;"> 5-Personel tablosundan isim alnını getiren sorgu hangisidir ?</p>
+                <div class="row  p-2 mt-1">
+                    <label class="col-8 text-secondary-emphasis"> <strong class="mx-1 text-dark">A)</strong> Select
+                        isim.personel</label>
+                    <input class="col-3" type="radio" name="s5" value="A">
+                </div>
+                <div class="row p-2 mt-1">
+                    <label class=" col-8 text-secondary-emphasis"> <strong class="mx-1 text-dark">B)</strong> Exctract
+                        isim from personel</label>
+                    <input class="col-3" type="radio" name="s5" value="B">
+                </div>
+                <div class="row  p-2 mt-1">
+                    <label class="col-8 text-secondary-emphasis"> <strong class="mx-1 text-dark">C)</strong> Select isim
+                        from personel</label>
+                    <input class="col-3" type="radio" name="s5" value="C">
+                </div>
+            </div>
+
+            <input class="btn btn-outline-primary mt-3 mb-3" type="button" value="Tamamla" onclick="answers()">
+
+        </form>
+
+
+
+
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
