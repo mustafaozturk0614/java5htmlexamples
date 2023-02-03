@@ -1,0 +1,87 @@
+:root {
+    --todobody: #121519;
+    --tddark: #111827;
+    --tdgreen: #448C74;
+    --tdred: #E75050;
+    --tdyellow: #EDCB50;
+    --tddark2: #1a1e23;
+
+}
+
+body {
+    background-color: var(--todobody);
+
+}
+
+
+
+
+h1 {
+    color: var(--tdgreen);
+    font-family: 'Hind', sans-serif;
+    margin-top: 5px;
+    margin-bottom: 55px;
+    font-weight: 800;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 50px;
+}
+
+h1 span {
+
+    color: var(--tdyellow);
+    font-weight: 500;
+    margin: 0;
+}
+
+.add {
+    border-radius: 50%;
+    background-color: #E75050;
+}
+
+.input {
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    margin: 4px;
+
+}
+
+.card {
+    border-radius: 25px;
+    margin-bottom: 15px;
+    border: none;
+    background: linear-gradient(to right, var(--todobody) var(--tdgreen) var(--tdyellow));
+}
+
+.card-body {
+
+    padding: 16px;
+    margin: 16px;
+    border-radius: 20px;
+    background-color: var(--tddark2);
+    color: aqua;
+    box-shadow: 1px 1px 3px 1px var(--tdyellow);
+}
+
+.card-body:hover {
+    transform: scale(1.1);
+    transition: 2s;
+}
+
+
+
+.mainDiv {
+    position: relative !important;
+}
+
+
+.active {
+    background-color: #E75050;
+    color: aqua;
+    font-weight: 700;
+    border-radius: 50px;
+    margin-left: 2px;
+
+}
